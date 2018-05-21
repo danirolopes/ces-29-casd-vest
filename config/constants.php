@@ -7,6 +7,7 @@ define('SENHA_NOREPLY', 'santosdumont97');
 define('ADMIN', 1);
 define('PROFESSOR', 2);
 define('ALUNO', 3);
+define('ASSISTENTE', 4);
 
 define('CASD', 1);
 define('CASDINHO', 2);

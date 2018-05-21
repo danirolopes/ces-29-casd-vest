@@ -16,6 +16,9 @@
                 <?php }if($this->controller == 'professor-admin') {?>
                 <a class="navbar-brand" href="#">Painel de Controle Professor</a>
                 <?php }?>
+                <?php if($this->controller == 'assistente') {?>
+                <a class="navbar-brand" href="#">Painel de Controle Assistente Social</a>
+                <?php }?>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -37,10 +40,18 @@
                     </li>
                     <li>
                         <a href="<?php echo ADMIN_PROF_LINK;?>"><i class="fa fa-fw fa-dashboard"></i> Administrar Professores</a>
-                    </li>
+                    </li>\
                     <?php }if($this->controller == 'professor-admin'){ ?>
                     <li class="active">
                         <a href="#"><i class="fa fa-fw fa-dashboard"></i> Administrar página</a>
+                    </li>
+                    <?php } ?>
+                    <?php if($this->controller == 'assistente'){ ?>
+                    <li >
+                        <a href="#"><i class="fa fa-fw fa-dashboard"></i> Administrar Tabela</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-dashboard"></i> Ver Entrevistas</a>
                     </li>
                     <?php } ?>
                 </ul>

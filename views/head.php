@@ -29,7 +29,7 @@
     <link href="<?php echo URL;?>css/bootstrap.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <?php if($this->controller != 'admin' && $this->controller != 'professor-admin') { ?>
+    <?php if($this->controller != 'admin' && $this->controller != 'professor-admin' && $this->controller != 'assistente') { ?>
     <link href="<?php echo URL;?>css/style.css" rel="stylesheet">
     <?php } ?>
     <?php if($this->controller == 'index') { ?>
@@ -45,10 +45,10 @@
     <?php if($this->controller == 'vestibulinho' || $this->controller == 'entrevista' || $this->controller == 'entrevista-login') { ?>
     <link href="<?php echo URL;?>css/vestibulinho.css" rel="stylesheet">
     <?php } ?>
-    <?php if($this->controller == 'admin' || $this->controller == 'professor-admin') { ?>
+    <?php if($this->controller == 'admin' || $this->controller == 'professor-admin' || $this->controller == 'assistente') { ?>
     <link href="<?php echo URL;?>css/admin.css" rel="stylesheet">
     <?php } ?>
-    <?php if($this->controller == 'admin-login') { ?>
+    <?php if($this->controller == 'admin-login' || $this->controller == 'assistente-login') { ?>
     <link href="<?php echo URL;?>css/admin-login.css" rel="stylesheet">
     <?php } ?>
     <?php if($this->controller == 'professor-login') { ?>

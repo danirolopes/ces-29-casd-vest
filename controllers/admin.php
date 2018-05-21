@@ -406,7 +406,10 @@ class Admin extends Controller
 		}
 
 		Controller::redirect(ADMIN_INDEX_LINK);
-	
 	}
+
+
+	
+
 }
 ?>

@@ -42,6 +42,9 @@ if(!ENVIRONMENT)
 
 	define('ENTREVISTA_LOGIN_LINK', URL.'entrevista/login');
 	define('ENTREVISTA_INDEX_LINK', URL.'entrevista/index');
+
+	define('ASSISTENTE_LOGIN_LINK', URL.'assistente/login');
+	define('ASSISTENTE_INDEX_LINK', URL.'assistente/index');
 	
 	define('VIDEO_INSTITUCIONAL_LINK', 'http://www.youtube.com/watch?v=waX6e1veNIs');
 
