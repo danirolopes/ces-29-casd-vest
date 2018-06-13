@@ -2,7 +2,7 @@
 
 class Controller
 {
-	
+
 	function __construct()
 	{
 		$this->view = new View();
@@ -28,7 +28,7 @@ class Controller
     {
         require_once 'models/mail.php';
         $email = new MailModel();
-        
+
         $emailBody = 'Mensagem enviada por: '.$this->test_input($_POST['nome']).' - '.$this->test_input($_POST['email']).'<br/><br/>'.$this->test_input($_POST['mensagem']);
         $email->setSubject('Mensagem de Contato do Site');
         $email->setTo(array(EMAIL_MKT => 'Marketing'));
@@ -39,7 +39,20 @@ class Controller
         $email->registerMailContact($this->test_input($_POST['nome']), $this->test_input($_POST['email']), $this->test_input($_POST['mensagem']));
     }
 
-    
+
+		public function sendMailConfirmation($EMAIL_NAME, $EMAIL_ADDRESS,$EMAIL_MSG)
+    {
+        require_once 'models/mail.php';
+        $email = new MailModel();
+				$emailBody = $EMAIL_MSG;
+				$email->setSubject('Mensagem de Contato do Site');
+        $email->setTo(array($EMAIL_ADDRESS => $EMAIL_NAME));
+        $email->setText($emailBody);
+        $email->setHtml($emailBody);
+        $email->send();
+    }
+
+
     protected function redirect ($location) {
         header('Location: '.$location);
         exit;
@@ -105,7 +118,7 @@ class Controller
         $uploaddir = DOCUMENT_ROOT.$pasta;
         $uploadfile = $uploaddir.$nome;
         if (move_uploaded_file($_FILES['arquivo']['tmp_name'], $uploadfile))
-        {   
+        {
             return true;
         }
         return false;
@@ -115,7 +128,7 @@ class Controller
         require_once 'libs/upload/class.upload.php';
 
 
-        $foo = new Upload($_FILES[$filePostName]); 
+        $foo = new Upload($_FILES[$filePostName]);
         if ($foo->uploaded) {
 
             $top = $cropData['y'];
@@ -137,7 +150,7 @@ class Controller
                 $foo->Clean();
             } else {
                 return false;
-            } 
+            }
         }else{
             return false;
         }

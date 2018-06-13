@@ -265,10 +265,10 @@
 [16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: x in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: § in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: § in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: b in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: h in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:51 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
@@ -277,12 +277,12 @@
 [16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: r in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: k in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: l in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: g in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: o in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: o in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: z in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: z in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:40:52 America/Sao_Paulo] PHP Notice:  Undefined index: o in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
@@ -467,10 +467,10 @@
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: x in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: § in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: § in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: b in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: h in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
@@ -479,12 +479,12 @@
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: r in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: k in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: l in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: g in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: o in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: o in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: z in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: z in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:41:19 America/Sao_Paulo] PHP Notice:  Undefined index: o in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
@@ -784,11 +784,11 @@
 [16-Sep-2017 23:42:24 America/Sao_Paulo] PHP Warning:  array_key_exists() expects exactly 2 parameters, 1 given in C:\xampp\htdocs\manish\libs\Entropia.php on line 37
 [16-Sep-2017 23:42:24 America/Sao_Paulo] PHP Notice:  Use of undefined constant texto - assumed 'texto' in C:\xampp\htdocs\manish\libs\Entropia.php on line 39
 [16-Sep-2017 23:42:24 America/Sao_Paulo] PHP Notice:  Uninitialized string offset: 55 in C:\xampp\htdocs\manish\libs\Entropia.php on line 39
-[16-Sep-2017 23:42:24 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 41
+[16-Sep-2017 23:42:24 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 41
 [16-Sep-2017 23:42:24 America/Sao_Paulo] PHP Warning:  array_key_exists() expects exactly 2 parameters, 1 given in C:\xampp\htdocs\manish\libs\Entropia.php on line 37
 [16-Sep-2017 23:42:24 America/Sao_Paulo] PHP Notice:  Use of undefined constant texto - assumed 'texto' in C:\xampp\htdocs\manish\libs\Entropia.php on line 39
 [16-Sep-2017 23:42:25 America/Sao_Paulo] PHP Notice:  Uninitialized string offset: 56 in C:\xampp\htdocs\manish\libs\Entropia.php on line 39
-[16-Sep-2017 23:42:25 America/Sao_Paulo] PHP Notice:  Undefined index: § in C:\xampp\htdocs\manish\libs\Entropia.php on line 41
+[16-Sep-2017 23:42:25 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 41
 [16-Sep-2017 23:42:25 America/Sao_Paulo] PHP Warning:  array_key_exists() expects exactly 2 parameters, 1 given in C:\xampp\htdocs\manish\libs\Entropia.php on line 37
 [16-Sep-2017 23:42:25 America/Sao_Paulo] PHP Notice:  Use of undefined constant texto - assumed 'texto' in C:\xampp\htdocs\manish\libs\Entropia.php on line 39
 [16-Sep-2017 23:42:25 America/Sao_Paulo] PHP Notice:  Uninitialized string offset: 57 in C:\xampp\htdocs\manish\libs\Entropia.php on line 39
@@ -902,10 +902,10 @@
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: x in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: § in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: § in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: b in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: h in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
@@ -914,12 +914,12 @@
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: r in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: k in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: l in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: g in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: o in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: o in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: z in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: z in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:42:26 America/Sao_Paulo] PHP Notice:  Undefined index: o in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
@@ -3303,10 +3303,10 @@
 [16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: x in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: § in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: § in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: b in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: h in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
@@ -3315,12 +3315,12 @@
 [16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: r in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: k in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: l in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: g in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: n in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: o in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: o in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
-[16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: Ã in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
+[16-Sep-2017 23:43:38 America/Sao_Paulo] PHP Notice:  Undefined index: ï¿½ in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:39 America/Sao_Paulo] PHP Notice:  Undefined index: z in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:39 America/Sao_Paulo] PHP Notice:  Undefined index: z in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
 [16-Sep-2017 23:43:39 America/Sao_Paulo] PHP Notice:  Undefined index: o in C:\xampp\htdocs\manish\libs\Entropia.php on line 74
@@ -18139,3 +18139,12 @@
 [11-Apr-2018 21:20:25 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '" SELECT * FROM vestibulinho_c' (T_CONSTANT_ENCAPSED_STRING) in C:\xampp\htdocs\santosdumont\models\admin_model.php on line 85
 [11-Apr-2018 21:20:27 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '" SELECT * FROM vestibulinho_c' (T_CONSTANT_ENCAPSED_STRING) in C:\xampp\htdocs\santosdumont\models\admin_model.php on line 85
 [11-Apr-2018 21:20:37 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '" SELECT * FROM vestibulinho_c' (T_CONSTANT_ENCAPSED_STRING) in C:\xampp\htdocs\santosdumont\models\admin_model.php on line 85
+[20-May-2018 18:14:05 America/Sao_Paulo] PHP Fatal error:  Uncaught UnexpectedValueException: DirectoryIterator::__construct(C:/xampp/htdocs/santosdumont-inaldo/files/vestibulinho_casdinho,C:/xampp/htdocs/santosdumont-inaldo/files/vestibulinho_casdinho): O sistema nï¿½o pode encontrar o caminho especificado. (code: 3) in C:\xampp\htdocs\santosdumont\libs\Controller.php:91
+Stack trace:
+#0 C:\xampp\htdocs\santosdumont\libs\Controller.php(91): DirectoryIterator->__construct('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\santosdumont\controllers\index.php(11): Controller->getFilesFromFolder('C:/xampp/htdocs...')
+#2 C:\xampp\htdocs\santosdumont\controllers\main_controller.php(73): Index->__construct()
+#3 C:\xampp\htdocs\santosdumont\controllers\main_controller.php(14): Main_Controller->handleUrl()
+#4 C:\xampp\htdocs\santosdumont\index.php(31): Main_Controller->handleRequest()
+#5 {main}
+  thrown in C:\xampp\htdocs\santosdumont\libs\Controller.php on line 91

@@ -2,7 +2,7 @@
 
 class Admin extends Controller
 {
-	
+
 	function __construct()
 	{
 		parent::__construct();
@@ -92,7 +92,7 @@ class Admin extends Controller
 		}
 
 		if (!Session::get('token-admin-login'))
-		{    
+		{
 			Session::set('token-admin-login', md5(uniqid(rand(), TRUE)));
 		}
 
@@ -232,7 +232,7 @@ class Admin extends Controller
 		echo pack("CCC",0xef,0xbb,0xbf);
 
 		for($i=0; $i<=count($conteudoTabela); $i++)
-		{  
+		{
 		    echo $tabela_excel[$i];
 		}
 
@@ -361,7 +361,7 @@ class Admin extends Controller
 		echo pack("CCC",0xef,0xbb,0xbf);
 
 		for($i=0; $i<=count($conteudoTabela); $i++)
-		{  
+		{
 		    echo $tabela_excel[$i];
 		}
 
@@ -391,21 +391,51 @@ class Admin extends Controller
 		if ($this->uploadFile('files/', 'resultadoVestibulinhoCasd.csv'))
 		{
 			# 1. Incluindo a biblioteca CSV
-			require_once 'libs/ARQUIVOS/csv.class.php' ; 
-			 
+			require_once 'libs/ARQUIVOS/csv.class.php' ;
+
 			# 2. Instanciando o Objeto de Manipulação de dados
 			$csv = new \ARQUIVOS\Csv( 'files/resultadoVestibulinhoCasd.csv' );
-			 
+
 			$csvResult = array();
 
 			# 3. Obtendo os resultados
 			foreach( $csv->ler() as $linha)
 			   $csvResult[] =  $linha;
-			
+
 			$this->model->uploadCSVtoDBCasd($csvResult);
 		}
 
 		Controller::redirect(ADMIN_INDEX_LINK);
+<<<<<<< HEAD
+=======
+
+	}
+
+	function sendallemail()
+	{
+		$conteudoTabela = $this->model->exportVestibulinhoCasd();
+		foreach($conteudoTabela as $pessoa){
+			Session::init();
+			Session::set('token-vestibulinho', md5(uniqid(rand(), TRUE)));
+			$token_vestibulinho = Session::get('token-vestibulinho');
+			$msg = 'Mensagem enviada para '.$pessoa['nome'].' '.$pessoa['sobrenome'];
+			$msg = $msg . "<br>" . 'Seu token é: ' . $token_vestibulinho;
+			$this->sendMailConfirmation($pessoa['nome'].' '.$pessoa['sobrenome'],$pessoa['email'],$msg);
+		}
+	}
+
+	function sendemail($EMAIL)
+	{
+		// $TOKEN = NULL;
+		if(isset($_GET['token'])) {
+			$TOKEN = $_GET['token'];
+		}
+		else {
+			$TOKEN = md5(uniqid(rand(), TRUE));
+		}
+		$msg = 'Olá '.$_GET['nome'].' '.$_GET['sobrenome'].' , seu Token é: ' . $TOKEN;
+		$this->sendMailConfirmation($_GET['nome'].' '.$_GET['sobrenome'],$EMAIL,$msg);
+>>>>>>> 129bc28de9cbd10d4947bc8ca35728f6f3e186e8
 	}
 
 
