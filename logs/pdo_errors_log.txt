@@ -80,3 +80,4 @@
 10:34 pm - 18/May/2018 - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''feayudsgy' float' at line 1
 10:46 pm - 18/May/2018 - SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'vascyusgdj'; check that column/key exists
 10:46 pm - 18/May/2018 - SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'vascyusgdj'; check that column/key exists
+4:17 am - 14/June/2018 - SQLSTATE[42000]: Syntax error or access violation: 1701 Cannot truncate a table referenced in a foreign key constraint (`inaldao_test`.`professores`, CONSTRAINT `professores_ibfk_2` FOREIGN KEY (`id_materia`) REFERENCES `inaldao_test`.`materia` (`id`))
