@@ -18,3 +18,11 @@ Para rodar:
 	Obs: A primeira requisição pode demorar, pois ocorrerá uma instalação automática do banco de dados
 	
  5- PRONTO!
+ 
+ 
+ 
+ PARA TESTES:
+ 
+ 1- Abrir o prompt de comando na pasta C:/xampp/htdocs/santosdumont-inaldo
+ 
+ 2- Rodar com "vendor/bin/phpunit"
