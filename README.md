@@ -7,7 +7,7 @@ Para rodar:
  
 	Obs: Cuidado com a instalação. No Windows, instale na pasta C:/xampp. Instalar na pasta C:/ProgramFiles/xampp causa erro de permissão
 	
- 2- Baixe esse repositório e o coloque na pasta C:/xampp/htdocs/santosdumont-inaldo
+ 2- Baixe esse repositório e o coloque a pasta santosdumont-inaldo dentro de C:/xampp/htdocs
  
  3- Ligue o Xampp, inicializando o Apache e o MySQL. 
  
