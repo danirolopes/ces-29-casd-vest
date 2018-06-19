@@ -1,8 +1,8 @@
-#Source Code
+# Source Code
 
+-----------------------------------------------------------------------
 
-
-Pastas: 
+# Pastas: 
 
 	/contollers - Contém os controllers do projeto. 
 
@@ -38,12 +38,12 @@ Pastas:
 
 
 
-Arquivos globais:
+# Arquivos globais:
 
 
 	.htaccess e web.config - NÃO MEXER. Arquivos usado pelo Apache para sua configuração
+	
 	index.php - Arquivo que recebe a requisição e a redireciona, seguindo os padrões de um projeto MVP.
-
 		Alterar a variável ENVOIRIMENT caso se mude de localhost para production server
 
 	composer.json - Arquivo usado pelo composer para gerenciar dependências do projeto. Só mexer caso queira se adicionar/remover dependências
