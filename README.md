@@ -25,4 +25,4 @@ Para rodar:
  
  1- Abrir o prompt de comando na pasta C:/xampp/htdocs/santosdumont-inaldo
  
- 2- Rodar com "vendor/bin/phpunit"
+ 2- Rodar com o comando "vendor/bin/phpunit"
