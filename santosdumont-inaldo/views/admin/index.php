@@ -197,7 +197,7 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <div class="panel panel-primary">
+                    <div class="panel panel-primary" style="text-align: center">
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-12 text-center">
@@ -212,12 +212,12 @@
                                 <input class="form-control" type="file" id="planilha_vestibulinho_casd" required name="arquivo" placeholder="Selecione o planilha" />
 
                             </div>
-                            <input type="submit" />
+                            <input class="btn btn-lg btn-primary" type="submit"  style="margin: 10px; color: white;" />
                         </form>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="panel panel-green">
+                    <div class="panel panel-green" style="text-align: center">
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-12 text-center">
@@ -232,8 +232,38 @@
                                 <input class="form-control" type="file" id="planilha_vestibulinho_casd" required name="arquivo" placeholder="Selecione o planilha" />
 
                             </div>
-                            <input type="submit" />
+                            <input class="btn btn-lg btn-primary" type="submit"  style="margin: 10px; color: white;" />
                         </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-primary" style="text-align: center">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-12 text-center">
+                                    <div>Mandar Email de Entrevistas Casd</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-lg btn-primary" href="<?php echo URL;?>admin/sendAllMail" style="margin: 10px; color: white;" >Enviar</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-green" style="text-align: center">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-12 text-center">
+                                    <div>Mandar Email de Entrevistas Casdinho</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-lg btn-primary" href="<?php echo URL;?>admin/sendAllMail" style="margin: 10px; color: white;" >Enviar</a>
                     </div>
                 </div>
             </div>
@@ -263,7 +293,6 @@
                         </div>
 
                         <a class="btn btn-lg btn-primary" href="<?php echo URL;?>admin/downloadEntrevistaCasd" style="margin: 10px; color: white;" >Baixar Dados Entrevista</a>
-                        </form>
                     </div>
                 </div>
             </div>

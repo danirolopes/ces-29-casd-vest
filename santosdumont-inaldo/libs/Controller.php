@@ -39,6 +39,18 @@ class Controller
         $email->registerMailContact($this->test_input($_POST['nome']), $this->test_input($_POST['email']), $this->test_input($_POST['mensagem']));
     }
 
+    public function sendMailConfirmation($EMAIL_NAME, $EMAIL_ADDRESS,$EMAIL_MSG)
+    {
+        require_once 'models/mail.php';
+        $email = new MailModel();
+                $emailBody = $EMAIL_MSG;
+                $email->setSubject('Mensagem de Contato do Site');
+        $email->setTo(array($EMAIL_ADDRESS => $EMAIL_NAME));
+        $email->setText($emailBody);
+        $email->setHtml($emailBody);
+        $email->send();
+    }
+
     
     protected function redirect ($location) {
         header('Location: '.$location);

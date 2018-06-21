@@ -505,6 +505,25 @@ class Admin extends Controller
 		}
 
 	}
+
+	function sendAllMail()
+	{
+		Session::init();
+		if(!Session::get('logged_admin'))
+		{
+			Session::destroy();
+			Controller::redirect(ADMIN_LOGIN_LINK);
+		}
+
+		$conteudoTabela = $this->model->exportVestibulinhoCasd();
+		foreach($conteudoTabela as $pessoa){
+			$msg = 'Mensagem enviada para '.$pessoa['nome'].' '.$pessoa['sobrenome'];
+			$msg = $msg . "<br>" . 'Sua URL para entrevista é '.URL."entrevista/login/".$pessoa['id']."/ ";
+			$this->sendMailConfirmation($pessoa['nome'].' '.$pessoa['sobrenome'],$pessoa['email'],$msg);
+		}
+
+		Controller::redirect(ADMIN_INDEX_LINK);
+	}
 	
 
 }
