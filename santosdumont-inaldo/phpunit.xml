@@ -1,8 +1,9 @@
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.1/phpunit.xsd"
-         backupGlobals="false"
+         backupGlobals="true"
          colors="true"
          bootstrap="vendor/autoload.php"
+         verbose="true"
         >
 
     <testsuites>

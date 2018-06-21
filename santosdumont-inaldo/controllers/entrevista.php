@@ -67,7 +67,6 @@ class Entrevista extends Controller
 				$login = $this->model->login($id_user);
 				if($login)
 				{
-					echo 'carai';
 					Session::change_id();
 					Session::set('logged_user_entrevista', true);
 					Session::set('logged_user_id', $id_user);

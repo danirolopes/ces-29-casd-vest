@@ -3,109 +3,312 @@
 
 class modelTest extends PHPUnit_Framework_TestCase
 {
-    public function testOne()
+    public static function setUpBeforeClass()
     {
-        $this->assertTrue(true);
+        Service::setTesting();
+        Service::setUpDefaultTestDB();
     }
 
 
 
-
-    public function testPushAndPop()
+    public function testLoginAdminSucess()
     {
-        $stack = [];
-        $this->assertSame(0, count($stack));
+        $_POST = array(
+            'username' => 'admin',
+            'password' => 'root');
 
-        array_push($stack, 'foo');
-        $this->assertSame('foo', $stack[count($stack)-1]);
-        $this->assertSame(1, count($stack));
+        require_once 'models/admin_model.php';
 
-        $this->assertSame('foo', array_pop($stack));
-        $this->assertSame(0, count($stack));
+        $model = new Admin_Model();
+
+        $login = $model->login();
+
+        $this->assertTrue($login);
+
+        $_POST = array();
     }
 
-    
-	public function testProducerFirst()
+    public function testLoginAdminFailedUsername()
     {
-        $this->assertTrue(true);
-        return 'first';
+        $_POST = array(
+            'username' => 'daniel',
+            'password' => 'root');
+
+        require_once 'models/admin_model.php';
+
+        $model = new Admin_Model();
+
+        $login = $model->login();
+
+        $this->assertFalse($login);
+
+        $_POST = array();
     }
 
-    public function testProducerSecond()
+    public function testLoginAdminFailedPassword()
     {
-        $this->assertTrue(true);
-        return 'second';
+        $_POST = array(
+            'username' => 'admin',
+            'password' => 'daniel');
+
+        require_once 'models/admin_model.php';
+
+        $model = new Admin_Model();
+
+        $login = $model->login();
+
+        $this->assertFalse($login);
+
+        $_POST = array();
     }
 
-    /**
-     * @depends testProducerFirst
-     * @depends testProducerSecond
-     */
-    public function testConsumer($a, $b)
+    public function testLoginAdminFailedUsernameAndPassword()
     {
-        $this->assertSame('first', $a);
-        $this->assertSame('second', $b);
-    }
+        $_POST = array(
+            'username' => 'daniel',
+            'password' => '123456');
 
-public function testEquality()
-    {
-        $this->assertEquals(
-            [1, 2, 3, 4, 5, 6],
-            ['1', 2, 3, 4, 5, 6]
-        );
-    }
+        require_once 'models/admin_model.php';
 
-public function testTwo()
-    {
-        $this->assertTrue(true);
-    }
+        $model = new Admin_Model();
 
-    public function testThree()
-    {
-        $this->assertTrue(true);
-    }
+        $login = $model->login();
 
+        $this->assertFalse($login);
 
-
-
-
-
-	public function TestServiceConection()
-    {
-
-    $classname = 'Service';
-
-      // Get mock, without the constructor being called
-        $stub = $this->createMock(Service::class);
-        $stub->method('openDb')->willReturn(Testes_Services::getConnection);
-        $this->assertEquals(Testes_Services::getConnection, $stub->openDb());
-       
+        $_POST = array();
     }
 
 
-
-
-    public function TestServiceDisconnect()
+    public function testLoginAssistenteSucess()
     {
+        $_POST = array(
+            'username' => 'assistente',
+            'password' => '123456');
 
-    $classname = 'Service';
+        require_once 'models/assistente_model.php';
 
-      // Get mock, without the constructor being called
-        $stub = $this->createMock(Service::class);
-        $stub->method('closeDb')->willReturn(null);
-        $this->assertEquals(null, $stub->openDb());
-       
+        $model = new Assistente_Model();
+
+        $login = $model->login();
+
+        $this->assertTrue($login);
+
+        $_POST = array();
+    }
+
+    public function testLoginAssistenteFailedUsername()
+    {
+        $_POST = array(
+            'username' => 'daniel',
+            'password' => '123456');
+
+        require_once 'models/assistente_model.php';
+
+        $model = new Assistente_Model();
+
+        $login = $model->login();
+
+        $this->assertFalse($login);
+
+        $_POST = array();
+    }
+
+    public function testLoginAssistenteFailedPassword()
+    {
+        $_POST = array(
+            'username' => 'assistente',
+            'password' => 'daniel');
+
+        require_once 'models/assistente_model.php';
+
+        $model = new Assistente_Model();
+
+        $login = $model->login();
+
+        $this->assertFalse($login);
+
+        $_POST = array();
+    }
+
+    public function testLoginAssistenteFailedUsernameAndPassword()
+    {
+        $_POST = array(
+            'username' => 'daniel',
+            'password' => 'daniel');
+
+        require_once 'models/assistente_model.php';
+
+        $model = new Assistente_Model();
+
+        $login = $model->login();
+
+        $this->assertFalse($login);
+
+        $_POST = array();
     }
 
 
+    public function testLoginEntrevistaSucess()
+    {
+        $_POST = array(
+            'cpf' => '06256573650',
+            'nascimento' => '17/04/1997');
+
+        require_once 'models/entrevista_model.php';
+
+        $model = new Entrevista_Model();
+
+        $login = $model->login(1);
+
+        $this->assertTrue($login);
+
+        $_POST = array();
+    }
+
+    public function testLoginEntrevistaFailedCPF()
+    {
+        $_POST = array(
+            'cpf' => '12345678910',
+            'nascimento' => '17/04/1997');
+
+        require_once 'models/entrevista_model.php';
+
+        $model = new Entrevista_Model();
+
+        $login = $model->login(1);
+
+        $this->assertFalse($login);
+
+        $_POST = array();
+    }
+
+    public function testLoginEntrevistaFailedNascimento()
+    {
+        $_POST = array(
+            'cpf' => '06256573650',
+            'nascimento' => '16/05/1997');
+
+        require_once 'models/entrevista_model.php';
+
+        $model = new Entrevista_Model();
+
+        $login = $model->login(1);
+
+        $this->assertFalse($login);
+
+        $_POST = array();
+    }
+
+    public function testLoginEntrevistaFailedID1()
+    {
+        $_POST = array(
+            'cpf' => '06256573650',
+            'nascimento' => '17/04/1997');
+
+        require_once 'models/entrevista_model.php';
+
+        $model = new Entrevista_Model();
+
+        $login = $model->login(2);
+
+        $this->assertFalse($login);
+
+        $_POST = array();
+    }
+
+    public function testLoginEntrevistaFailedID2()
+    {
+        $_POST = array(
+            'cpf' => '06256573650',
+            'nascimento' => '17/04/1997');
+
+        require_once 'models/entrevista_model.php';
+
+        $model = new Entrevista_Model();
+
+        $login = $model->login(3);
+
+        $this->assertFalse($login);
+
+        $_POST = array();
+    }
+
+    public function testLoginEntrevistaFailedNotaVestibulinho()
+    {
+        $_POST = array(
+            'cpf' => '12345678910',
+            'nascimento' => '17/04/1997');
+
+        require_once 'models/entrevista_model.php';
+
+        $model = new Entrevista_Model();
+
+        $login = $model->login(2);
+
+        $this->assertFalse($login);
+
+        $_POST = array();
+    }
+
+     public function testLoginEntrevistaFailedNotaVestibulinhoAndCPF()
+    {
+        $_POST = array(
+            'cpf' => '0000000001',
+            'nascimento' => '17/04/1997');
+
+        require_once 'models/entrevista_model.php';
+
+        $model = new Entrevista_Model();
+
+        $login = $model->login(2);
+
+        $this->assertFalse($login);
+
+        $_POST = array();
+    }
 
 
+     public function testLoginEntrevistaFailedNotaVestibulinhoAndNascimento()
+    {
+        $_POST = array(
+            'cpf' => '12345678910',
+            'nascimento' => '16/05/1997');
+
+        require_once 'models/entrevista_model.php';
+
+        $model = new Entrevista_Model();
+
+        $login = $model->login(2);
+
+        $this->assertFalse($login);
+
+        $_POST = array();
+    }
 
 
+    public function testAdminUploadResultadoVestibulinho()
+    {
+        $csvResult = array(
+            array('id' => 17041998,
+                'nota' => 1)
+            );
 
+        require_once 'models/admin_model.php';
+
+        $model = new Admin_Model();
+
+        $sucessful = $model->uploadCSVtoDBCasd($csvResult);
+
+        $this->assertTrue($sucessful);
+    }
 
 
 	
+    public static function tearDownAfterClass()
+    {
+        Service::doneTesting();
+    }
 
 }
 

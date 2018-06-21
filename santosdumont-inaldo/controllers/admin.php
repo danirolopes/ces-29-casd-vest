@@ -408,7 +408,103 @@ class Admin extends Controller
 		Controller::redirect(ADMIN_INDEX_LINK);
 	}
 
+	function downloadEntrevistaCasd()
+	{
+		Session::init();
+		if(!Session::get('logged_admin'))
+		{
+			Session::destroy();
+			Controller::redirect(ADMIN_LOGIN_LINK);
+		}
 
+		$todasEntrevistas = $this->model->getAllEntrevistas();
+
+		$tabela_excel = array();
+
+		$tabela_excel[0] = "";
+
+		$tabela_excel[0] .= "<table><tr>";
+		$tabela_excel[0] .= "<td><b>id</b></td>";
+		$tabela_excel[0] .= "<td><b>nome</b></td>";
+		$tabela_excel[0] .= "<td><b>iptu</b></td>";
+		$tabela_excel[0] .= "<td><b>veiculos</b></td>";
+		$tabela_excel[0] .= "<td><b>holerites_1</b></td>";
+		$tabela_excel[0] .= "<td><b>holerites_2</b></td>";
+		$tabela_excel[0] .= "<td><b>holerites_3</b></td>";
+		$tabela_excel[0] .= "<td><b>aposentadorias</b></td>";
+		$tabela_excel[0] .= "<td><b>auxilios</b></td>";
+		$tabela_excel[0] .= "<td><b>renda_bruta</b></td>";
+		$tabela_excel[0] .= "<td><b>rbpc</b></td>";
+		$tabela_excel[0] .= "<td><b>agua_1</b></td>";
+		$tabela_excel[0] .= "<td><b>agua_2</b></td>";
+		$tabela_excel[0] .= "<td><b>agua_3</b></td>";
+		$tabela_excel[0] .= "<td><b>luz_1</b></td>";
+		$tabela_excel[0] .= "<td><b>luz_2</b></td>";
+		$tabela_excel[0] .= "<td><b>luz_3</b></td>";
+		$tabela_excel[0] .= "<td><b>net_1</b></td>";
+		$tabela_excel[0] .= "<td><b>net_2</b></td>";
+		$tabela_excel[0] .= "<td><b>net_3</b></td>";
+		$tabela_excel[0] .= "<td><b>aluguel</b></td>";
+		$tabela_excel[0] .= "<td><b>outros_gastos</b></td>";
+		$tabela_excel[0] .= "<td><b>gastos_totais</b></td>";
+		$tabela_excel[0] .= "<td><b>renda_liq</b></td>";
+		$tabela_excel[0] .= "<td><b>rlpc</b></td>";
+		$tabela_excel[0] .= "<td><b>obs</b></td>";
+		$tabela_excel[0] .= "</tr></table>";
+
+		$i = 0;
+		while($i < count($todasEntrevistas))
+		{
+			$tabela_excel[$i+1] = "";
+			$tabela_excel[$i+1] .= "<table><tr>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['id']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['nome']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['iptu']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['veiculos']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['holerites_1']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['holerites_2']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['holerites_3']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['aposentadorias']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['auxilios']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['renda_bruta']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['rbpc']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['agua_1']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['agua_2']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['agua_3']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['luz_1']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['luz_2']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['luz_3']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['net_1']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['net_2']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['net_3']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['aluguel']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['outros_gastos']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['gastos_totais']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['renda_liq']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['rlpc']."</b></td>";
+			$tabela_excel[$i+1] .= "<td><b>".$todasEntrevistas[$i]['obs']."</b></td>";
+			$tabela_excel[$i+1] .= "</tr></table>";
+			$i++;
+		}
+
+
+		$arquivo = 'entrevistas_casd_'.strval(date('Y')+1).'.xls';
+		header ("Expires: ".gmdate("D,d M YH:i:s", strtotime("+5 minutes")));
+		header ("Last-Modified: " . gmdate("D,d M YH:i:s") . " GMT");
+		header ("Cache-Control: no-cache, must-revalidate");
+		header ("Pragma: no-cache");
+		header ("Content-type: application/vnd.ms-excel; charset=UTF-8" );
+		header ("Content-Disposition: attachment; filename={$arquivo}" );
+		header ("Content-Description: PHP Generated Data" );
+
+		echo pack("CCC",0xef,0xbb,0xbf);
+
+		for($i=0; $i<=count($todasEntrevistas); $i++)
+		{  
+		    echo $tabela_excel[$i];
+		}
+
+	}
 	
 
 }

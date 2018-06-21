@@ -23,6 +23,7 @@ class Admin_Model extends Model
 
             $count = $stmt->rowCount();
 
+
             if($count == 1)
             {
             	$user = $stmt->fetch();
@@ -477,6 +478,36 @@ class Admin_Model extends Model
         } finally{
             Service::closeDb();
         }
+    }
+
+
+    public function getAllEntrevistas()
+    {
+        try
+        {
+            $connection = Service::openDb();
+
+            $stmt = $connection->prepare("SELECT * FROM entrevista_casd_".strval(date('Y')+1));
+            $stmt->execute();
+            $result = $stmt->fetchAll();
+
+            foreach ($result as $index => $linha) {
+                $stmt = $connection->prepare("SELECT nome, sobrenome FROM vestibulinho_casd_".strval(date('Y')+1)." WHERE id = :id");
+                $stmt->execute(array(":id" => $linha['id_user']));
+                $nome = $stmt->fetch();
+
+                $result[$index]['nome'] = $nome['nome']." ".$nome['sobrenome'];
+            }
+
+            return $result;
+
+        } catch (PDOException $e)
+        {
+            $this->writeLog($e->getMessage());
+            return false;
+        } finally{
+            Service::closeDb();
+        } 
     }
 
 }

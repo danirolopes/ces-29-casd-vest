@@ -52,12 +52,12 @@ class Service {
             Service::$testConnection->query('SET character_set_results=utf8mb4');
             Service::$testConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $tables = Service::$testConnection->prepare('SHOW TABLES');
+            /*$tables = Service::$testConnection->prepare('SHOW TABLES');
             $tables->execute();
             foreach($tables->fetchAll(\PDO::FETCH_COLUMN) as $table)
             {
                 Service::$testConnection->query('TRUNCATE TABLE `' . $table . '`')->execute();
-            }
+            }*/
             return Service::$testConnection;
         }
     }
@@ -72,7 +72,8 @@ class Service {
 
     public static function setTesting()
     {
-        Service::$isTesting = true;
+        //TODO Testes não funcionam com DB de teste por nenhum motivo aparente. Testes estão rodando no DB normal!!!
+        Service::$isTesting = false;
     }
     
     public static function doneTesting()
@@ -110,6 +111,30 @@ class Service {
         catch(PDOException $e)
         {
             throw new Exception("Creating to DB failed");
+        }
+        
+    }
+
+    public static function setUpDefaultTestDB()
+    {
+         try {
+            $sql = file_get_contents(DOCUMENT_ROOT.'config/santosdumont_test.sql');
+            
+            $setUpDBConnection = null;
+            $setUpDBConnection = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME.'_test', DB_USER, DB_PWD);
+            if (!$setUpDBConnection) throw new Exception("Connection to database server failed!");
+
+             $stmt = $setUpDBConnection->prepare($sql);
+             $stmt->execute();
+
+            $stmt = $setUpDBConnection->prepare("SELECT * FROM user");
+             $stmt->execute();
+        }
+
+
+        catch(PDOException $e)
+        {
+            throw new Exception("Failed to Setup Test");
         }
         
     }

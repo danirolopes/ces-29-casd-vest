@@ -74,6 +74,43 @@ class Assistente extends Controller
 		$this->view->render('assistente/login', true);
 	}
 
+	function info()
+	{
+		Session::init();
+		if(!Session::get('logged_assistente'))
+		{
+			Session::destroy();
+			Controller::redirect(ASSISTENTE_LOGIN_LINK);
+		}
+
+		$this->view->tableHeader = $this->model->getColunasTabela();
+		$this->view->tableBody = $this->model->getAllEntrevistas();
+
+		$this->view->controller = 'assistente';
+
+		$this->view->render('assistente/info', false, true);
+	}
+
+	function candidato()
+	{
+		Session::init();
+		if(!Session::get('logged_assistente'))
+		{
+			Session::destroy();
+			Controller::redirect(ASSISTENTE_LOGIN_LINK);
+		}
+
+		$this->view->colunas = $this->model->getColunasTabela();
+		$this->view->entrevistas = $this->model->getAllEntrevistas();
+
+		if(isset($_POST['get_candidato']))
+		{
+			$this->view->candidato = $_POST['get_candidato'];
+		}
+
+		$this->view->controller = 'assistente';
+		$this->view->render('assistente/candidato', false, true);
+	}
 
 
 	function logout()

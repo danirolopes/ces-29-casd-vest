@@ -16,7 +16,7 @@ class Entrevista_Model extends Model
 	{
 		try {
             $connection = Service::openDb();
-            $stmt = $connection->prepare("SELECT id FROM vestibulinho_casd_".strval(date('Y')+1)." WHERE cpf = :cpf AND nascimento = :nascimento AND id = :id");
+            $stmt = $connection->prepare("SELECT id FROM vestibulinho_casd_".strval(date('Y')+1)." WHERE cpf = :cpf AND nascimento = :nascimento AND id = :id AND nota_vestibulinho = 1");
             
             $stmt->execute(array(
             	':cpf' => $this->test_input_login($_POST['cpf']),

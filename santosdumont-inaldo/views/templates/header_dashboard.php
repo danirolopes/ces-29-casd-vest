@@ -48,10 +48,13 @@
                     <?php } ?>
                     <?php if($this->controller == 'assistente'){ ?>
                     <li >
-                        <a href="#"><i class="fa fa-fw fa-dashboard"></i> Administrar Tabela</a>
+                        <a href="<?php echo URL.'assistente/index';?>"><i class="fa fa-fw fa-dashboard"></i> Administrar Tabela</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-fw fa-dashboard"></i> Ver Entrevistas</a>
+                        <a href="<?php echo URL.'assistente/info';?>"><i class="fa fa-fw fa-dashboard"></i> Ver Entrevistas</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo URL.'assistente/candidato';?>"><i class="fa fa-fw fa-dashboard"></i> Ver Candidato</a>
                     </li>
                     <?php } ?>
                 </ul>

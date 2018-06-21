@@ -237,6 +237,36 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-primary" style="text-align: center">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-12 text-center">
+                                    <div>Resultado Entrevista Socioeconômica CASD Vest</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-lg btn-primary" href="<?php echo URL;?>admin/downloadEntrevistaCasd" style="margin: 10px; color: white;" >Baixar Dados Entrevista</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-green" style="text-align: center">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-12 text-center">
+                                    <div>Resultado Entrevista Socioeconômica Casdinho</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-lg btn-primary" href="<?php echo URL;?>admin/downloadEntrevistaCasd" style="margin: 10px; color: white;" >Baixar Dados Entrevista</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- /.container-fluid -->
 
